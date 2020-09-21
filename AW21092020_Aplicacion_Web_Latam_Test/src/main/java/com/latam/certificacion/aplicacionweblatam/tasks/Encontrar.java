@@ -10,7 +10,7 @@ import static com.latam.certificacion.aplicacionweblatam.userinterfaces.PaginaPr
 import static com.latam.certificacion.aplicacionweblatam.userinterfaces.PaginaPrincipalComponents.LINK_MIS_VIAJES;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
-public class Encuentra implements Task {
+public class Encontrar implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(WaitUntil.the(LINK_MIS_VIAJES, isVisible()));
@@ -18,7 +18,7 @@ public class Encuentra implements Task {
         actor.attemptsTo(Click.on(LINK_DONDE_ENCUENTRAS));
     }
 
-    public static Encuentra elCodigo() {
-        return Tasks.instrumented(Encuentra.class);
+    public static Encontrar elCodigo() {
+        return Tasks.instrumented(Encontrar.class);
     }
 }
