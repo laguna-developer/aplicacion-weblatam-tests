@@ -10,10 +10,10 @@ public class PaginaPrincipalComponents {
 
     public static final Target LINK_DONDE_ENCUENTRAS = Target
             .the("Link donde lo encuentras")
-            .locatedBy("//span[text()='¿Dónde lo encuentras?']");
+            .located(By.id("bookingSearchForm-c81__open-modal"));
 
     public static final Target CODIGO_DE_RESERVA = Target
             .the("Codigo de Reserva")
-            .located(By.id("bookingSearchForm-c81__open-modal"));
+            .locatedBy("//span[@class='record-locator']");
 
 }
