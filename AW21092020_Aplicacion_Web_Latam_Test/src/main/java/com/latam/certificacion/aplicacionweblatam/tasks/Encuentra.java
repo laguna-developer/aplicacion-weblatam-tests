@@ -14,9 +14,8 @@ public class Encuentra implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(WaitUntil.the(LINK_MIS_VIAJES, isVisible()));
-        actor.attemptsTo(Click.on(LINK_MIS_VIAJES),
-                Click.on(LINK_DONDE_ENCUENTRAS));
-        //actor.attemptsTo(Click.on(LINK_DONDE_ENCUENTRAS));
+        actor.attemptsTo(Click.on(LINK_MIS_VIAJES));
+        actor.attemptsTo(Click.on(LINK_DONDE_ENCUENTRAS));
     }
 
     public static Encuentra elCodigo() {

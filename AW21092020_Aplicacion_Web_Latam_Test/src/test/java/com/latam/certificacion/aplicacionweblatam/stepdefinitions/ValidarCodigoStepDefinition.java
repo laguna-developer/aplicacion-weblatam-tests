@@ -34,7 +34,6 @@ public class ValidarCodigoStepDefinition {
     @When("^el busca el codigo$")
     public void elBuscaElCodigo() {
         theActorInTheSpotlight().attemptsTo(Encuentra.elCodigo());
-
     }
 
 
