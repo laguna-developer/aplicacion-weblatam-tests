@@ -1,6 +1,7 @@
 package com.latam.certificacion.aplicacionweblatam.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
+import org.openqa.selenium.By;
 
 public class PaginaPrincipalComponents {
     public static final Target LINK_MIS_VIAJES = Target
@@ -13,6 +14,6 @@ public class PaginaPrincipalComponents {
 
     public static final Target CODIGO_DE_RESERVA = Target
             .the("Codigo de Reserva")
-            .locatedBy("//span[@class='record-locator']");
+            .located(By.id("bookingSearchForm-c81__open-modal"));
 
 }
